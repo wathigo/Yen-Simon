@@ -1,0 +1,20 @@
+#title, #description{
+  margin: 0 auto;
+  width: 30vw
+}
+#survey-form{
+  margin: 0 auto;
+  width: 50vw;
+  border: 1px black;
+  background-color: white;
+  height: 90vh;
+  padding: 15px;
+  align-items: center;
+}
+#name-label{
+  margin: 0 auto;
+  width: 20vw;
+}
+body{
+  background-color: lightblue;
+}
