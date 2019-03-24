@@ -8,11 +8,17 @@
 
   <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-       <h1 id="title"></h1>
-       <p id="description"> </p>
+       <h1 id="title">Survey Form</h1>
+       <p id="description">This is a survey form </p>
        <form id="survey-form">
-         <input id="name" type="text"/>
-         <input id="email" type="emeil"/>
+        <label id="name-label" for="name">* Name: </label>
+         <input id="name" type="text" required />
+         <label id="email-label" for="email">* Email: </label>
+         <input id="email" type="email" required placeholder="Enter your Email"/>
+         <label id="number-label" for="number">* Age: </label>
+        <input id="number" type="number" min="1" max="125" placeholder="Age" />
+        <button id="submit" type="submit">Submit</button>
+
        </form>
 
     <script  src="js/index.js"></script>
