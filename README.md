@@ -1,2 +1,0 @@
-# Yen-Simon
-Microverse Project
