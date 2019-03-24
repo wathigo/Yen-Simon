@@ -11,10 +11,24 @@
   padding: 15px;
   align-items: center;
 }
-#name-label{
-  margin: 0 auto;
-  width: 20vw;
-}
+
 body{
   background-color: lightblue;
+  text-align: center;
+
+
+}
+
+.labels {
+	display: inline-block;
+	text-align: right;
+	vertical-align: top;
+
+
+}
+.input {
+	display: inline-block;
+	text-align: left;
+	vertical-align: middle;
+
 }

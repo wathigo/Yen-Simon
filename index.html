@@ -11,13 +11,13 @@
        <h1 id="title">Survey Form</h1>
        <p id="description">This is a survey form </p>
        <form id="survey-form">
-        <label id="name-label" for="name">* Name: </label>
-         <input id="name" placeholder="Enter your name" type="text" required /><br>
-         <label id="email-label" for="email">* Email: </label>
-         <input id="email" type="email" required placeholder="Enter your Email"/><br>
-         <label id="number-label" for="number">* Age: </label>
-        <input id="number" type="number" min="1" max="125" placeholder="Age" /><br>
-        <select id="dropdown" name="currentPos" class="dropdown">
+        <label class="labels" id="name-label" for="name">* Name: </label>
+         <input class="inputs" id="name" placeholder="Enter your name" type="text" required /><br>
+         <label class="labels" id="email-label" for="email">* Email: </label>
+         <input class="inputs" id="email" type="email" required placeholder="Enter your Email"/><br>
+         <label class="labels" id="number-label" for="number">* Age: </label>
+        <input class="inputs" id="number" type="number" min="1" max="125" placeholder="Age" /><br>
+        <select class="inputs" id="dropdown" name="currentPos" class="dropdown">
           <option disabled value>Select an option</option>
           <option  value="student">Student</option>
           <option value="job">Full Time Job</option>
@@ -25,20 +25,22 @@
           <option value="preferNo">Prefer not to say</option>
           <option value="other">Other</option>
       </select>
-      <ul style="list-style: none;">
+      <ul class="inputs" style="list-style: none;">
           <li class="radio"><label>Definitely<input name="radio-buttons" value="1"  type="radio"></label></li>
           <li class="radio"><label>Maybe<input name="radio-buttons" value="2"  type="radio" ></label></li>
           <li class="radio"><label>Not sure<input name="radio-buttons" value="3"  type="radio" label></li>
         </ul>
-        <label id="checkbox-label" for="checkbox">What is your favorite learning path? </label>
-        <ul id="checkbox" style="list-style: none;">
+        <label class="labels" id="checkbox-label" for="checkbox">What is your favorite learning path? </label>
+        <div class="inputs">
+        <ul  id="checkbox" style="list-style: none;">
           <li ><label><input name="prefer" value="1" type="checkbox" >Front-end </label></li>
-          <li ><input name="prefer" value="2" type="checkbox" >Back-end </li>
+          <li ><label><input name="prefer" value="2" type="checkbox" >Back-end </label></li>
           <li ><label><input name="prefer" value="3" type="checkbox" >Data Visualization</label></li>
           <li ><label><input name="prefer" value="4" type="checkbox" >Other Challenges</label></li> 
         </ul>
+        </div>
         <label for="textarea">Additional Comments</label><br>
-        <textarea placeholder="Enter your comments"></textarea><br>
+        <textarea  class="inputs" placeholder="Enter your comments"></textarea><br>
         <button id="submit" type="submit">Submit</button>
 
        </form>
